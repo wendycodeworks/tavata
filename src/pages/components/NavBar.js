@@ -58,7 +58,7 @@ class NavBar extends Component {
                         <a class="button is-info">
                             <strong>Sign up</strong>
                         </a>
-                        <div class="button is-light">
+                        <div class="button is-info is-inverted">
                             Log in
                         </div>
                         </div>
