@@ -10,7 +10,7 @@ const DeleteEvent = ({eventId, onDelete}) => {
     
     }
 
-    return <button onClick={deleteEvent}> Delete </button>
+    return <button class="delete is-medium" onClick={deleteEvent}> Delete </button>
 }
 
 export default DeleteEvent

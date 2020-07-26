@@ -55,12 +55,14 @@ class NavBar extends Component {
 
                     <div class="navbar-item">
                         <div class="buttons">
+                         {/* to link to sign up */}
                         <a class="button is-info">
                             <strong>Sign up</strong>
                         </a>
-                        <div class="button is-info is-outlined">
+                        {/* to link to login */}
+                        <a class="button is-info is-outlined">
                             Log in
-                        </div>
+                        </a>
                         </div>
                     </div>
             
