@@ -16,7 +16,7 @@ class Login extends Component {
                                     <input class="input is-medium is-rounded" type="email" placeholder="hello@example.com" autocomplete="username" required />
                                 </div>
                             </div>
-                            <div class="field">
+                            <div className="field">
                                 <div class="control">
                                     <input class="input is-medium is-rounded" type="password" placeholder="**********" autocomplete="current-password" required />
                                 </div>
