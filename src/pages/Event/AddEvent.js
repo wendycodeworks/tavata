@@ -12,7 +12,7 @@ const AddEvent = () => {
   const [eventLocation, setEventLocation] = useState("")
   const [eventBanner, setEventBanner] = useState("")
   const [isCreated, setIsCreated] = useState(false)
-  const [successMessage, setSuccessMessage] = useState("")
+  // const [successMessage, setSuccessMessage] = useState("")
   const [errorMessage, setErrorMessage] = useState("")
     
   function addEvent(){
@@ -22,12 +22,10 @@ const AddEvent = () => {
           title: eventTitle,
           description: eventDescription,
           date: eventDate,
-          location: eventLocation, 
-          banner: eventBanner
+          location: eventLocation
         }
       })
       .then(() => setIsCreated(true))
-      .then(() => setSuccessMessage("Yay! Event created!"))
     } else {
       setErrorMessage("Required values!")
     }
@@ -36,8 +34,6 @@ const AddEvent = () => {
   return (
     <div className="AddEventForm" style={{ margin: "0 250px" }}>
       {errorMessage}
-              <form encType="multipart/form-data">
-    
                 <div className="field">
                   <label className="label">Title:</label>
                   <input
@@ -100,8 +96,7 @@ const AddEvent = () => {
     
                 <button className="button is-block is-fullwidth is-primary is-medium is-rounded" onClick={addEvent}>Submit</button>
                 
-                {isCreated && successMessage && <Redirect to="/" />}
-              </form>
+                {isCreated && <Redirect to="/" />}
             
             </div>
 
