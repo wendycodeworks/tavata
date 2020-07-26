@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {Component} from 'react';
 import 'bulma';
+import logo from "./assets/logo.png"
 
-const NavBar = () => {
+class NavBar extends Component {
+  
+    render(){
+
     return(
-        <div>
+    <div>
         <div>
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <div class="navbar-item" href="https://bulma.io">
-                    
-                    </div>
+                    <div class="navbar-item" href="#">
+                    <a class="navbar-item" href="#">
+                        <img src={logo} width="55" height="150"/>
+                    </a>
+                 </div>
 
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
@@ -19,7 +25,7 @@ const NavBar = () => {
                 </div>
 
                 <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-start">
+                    <div class="navbar-end">
                     <a class="navbar-item">
                         Events
                     </a>
@@ -47,7 +53,6 @@ const NavBar = () => {
                     </div>
                     </div>
 
-                    <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
                         <a class="button is-primary">
@@ -58,12 +63,13 @@ const NavBar = () => {
                         </div>
                         </div>
                     </div>
-                    </div>
+            
                 </div>
-                </nav>
+            </nav>
         </div>
-        </div>
+    </div>
     )
+}
 }
 
 export default NavBar;
