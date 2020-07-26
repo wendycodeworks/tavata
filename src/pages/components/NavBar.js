@@ -58,7 +58,7 @@ class NavBar extends Component {
                         <a class="button is-info">
                             <strong>Sign up</strong>
                         </a>
-                        <div class="button is-info is-inverted">
+                        <div class="button is-info is-outlined">
                             Log in
                         </div>
                         </div>
