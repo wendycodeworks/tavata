@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import AddEvent from './Event/AddEvent';
 import BrowseButton from './components/BrowseButton'
+import EventCard from './components/EventCard'
 import 'bulma';
-
 
 class HomePage extends Component {
     render() {
     return (
         <>
         <div> 
-        <section class="hero is-fullheight">
+            <section class="hero is-fullheight-with-navbar">
                 <div class="hero-body is-medium">
                     <div class="container">
                         <h1 class="title is-1">
@@ -21,12 +21,14 @@ class HomePage extends Component {
                             <BrowseButton />
                     </div>
                 </div>
+            </section>
+            <section>
                 <div class="hero-body">
                     <div class="container">
                         <h1 class="title">
                             Top picks
                         </h1>
-
+                        <EventCard />
                     </div>
                 </div>
             </section>
