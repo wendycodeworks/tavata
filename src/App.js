@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import HomePage from "./pages/HomePage.js";
 import AddEvent from "./pages/Event/AddEvent.js"
+import NavBar from './pages/components/NavBar';
 import {BrowserRouter, Route} from "react-router-dom"
 import Login from "./pages/User/Login.js"
 
@@ -8,6 +9,7 @@ class App extends Component {
   render(){
     return(
       <div>
+        <NavBar />
         <BrowserRouter>
         <div>
             <Route exact path="/" component={HomePage} />

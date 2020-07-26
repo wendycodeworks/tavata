@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import AddEvent from './Event/AddEvent';
 import BrowseButton from './components/BrowseButton'
-import NavBar from './components/NavBar';
 import 'bulma';
 
 
@@ -9,7 +8,6 @@ class HomePage extends Component {
     render() {
     return (
         <>
-        <NavBar />
         <div> 
         <section class="hero is-fullheight">
                 <div class="hero-body is-medium">
