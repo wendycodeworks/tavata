@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import AddEvent from './Event/AddEvent';
-import NavBar from './components/NavBar'
+import BrowseButton from './components/BrowseButton'
+import NavBar from './components/NavBar';
 import 'bulma';
 
 
@@ -19,6 +20,7 @@ class HomePage extends Component {
                             <h2 class="subtitle">
                                 Your local tech ecosystem at your figure tips
                             </h2>
+                            <BrowseButton />
                     </div>
                 </div>
                 <div class="hero-body">
