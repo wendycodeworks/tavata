@@ -55,7 +55,7 @@ class NavBar extends Component {
 
                     <div class="navbar-item">
                         <div class="buttons">
-                        <a class="button is-primary">
+                        <a class="button is-info">
                             <strong>Sign up</strong>
                         </a>
                         <div class="button is-light">
