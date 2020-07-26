@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import 'bulma';
 import logo from "./assets/logo.png"
+import SearchBar from "./SearchBar.js"
 
 class NavBar extends Component {
   
@@ -15,6 +16,9 @@ class NavBar extends Component {
                     <a class="navbar-item" href="#">
                         <img src={logo} width="55" height="150"/>
                     </a>
+                    <div>
+                        <SearchBar />
+                    </div>
                  </div>
 
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
