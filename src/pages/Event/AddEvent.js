@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import {Redirect} from 'react-dom';
+import 'bulma'
 
 const AddEvent = () => {
 
@@ -15,13 +16,12 @@ const AddEvent = () => {
   const [errorMessage, setErrorMessage] = useState("")
     
   function addEvent(){
-    if (eventTitle && eventDescription && eventDate && eventTime && eventLocation && eventBanner){
-      axios.post(`url/events`, {
+    if (eventTitle && eventDescription && eventDate && eventLocation && eventBanner){
+      axios.post(`https://shrouded-refuge-96179.herokuapp.com/event`, {
         event: {
           title: eventTitle,
           description: eventDescription,
           date: eventDate,
-          time: eventTime,
           location: eventLocation, 
           banner: eventBanner
         }
@@ -38,22 +38,22 @@ const AddEvent = () => {
       {errorMessage}
               <form encType="multipart/form-data">
     
-                <div className="form-field">
-                  <label>Title:</label>
+                <div className="field">
+                  <label className="label">Title:</label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="input"
                     placeholder="Enter event title"
                     value={eventTitle}
                     onChange={e => setEventTitle(e.target.value)}
                   />
                 </div>
     
-                <div className="form-field">
-                  <label>Description:</label>
+                <div className="field">
+                  <label className="label">Description:</label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="input"
                     placeholder="Enter event description"
                     name="description"
                     value={eventDescription}
@@ -61,11 +61,11 @@ const AddEvent = () => {
                   />
                 </div>
     
-                <div className="form-field">
-                  <label>Date:</label>
+                <div className="field">
+                  <label className="label">Date:</label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="input"
                     placeholder="Enter date in the format dd-mm-yyyy"
                     name="date"
                     value={eventDate}
@@ -73,23 +73,11 @@ const AddEvent = () => {
                   />
                 </div>
 
-                <div className="form-field">
-                  <label>Time:</label>
+                <div className="field">
+                  <label className="label">Location:</label>
                   <input
                     type="text"
-                    className="form-control"
-                    placeholder="Enter date in the format dd-mm-yyyy"
-                    name="time"
-                    value={eventTime}
-                    onChange={e => setEventTime(e.target.value)}
-                  />
-                </div>
-
-                <div className="form-field">
-                  <label>Location:</label>
-                  <input
-                    type="text"
-                    className="form-control"
+                    className="input"
                     placeholder="Enter location"
                     name="location"
                     value={eventLocation}
@@ -97,11 +85,11 @@ const AddEvent = () => {
                   />
                 </div>
 
-                <div className="form-field">
-                  <label>Event Banner:</label>
+                <div className="field">
+                  <label className="label">Event Banner:</label>
                   <input
                     type="file"
-                    className="form-control"
+                    className="input"
                     placeholder="Upload event banner"
                     name="banner"
                     accept="image/*"
@@ -110,7 +98,7 @@ const AddEvent = () => {
                   />
                 </div>
     
-                <button onClick={addEvent}>Submit</button>
+                <button className="button is-block is-fullwidth is-primary is-medium is-rounded" onClick={addEvent}>Submit</button>
                 
                 {isCreated && successMessage && <Redirect to="/" />}
               </form>
