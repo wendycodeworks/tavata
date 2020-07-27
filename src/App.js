@@ -13,10 +13,10 @@ class App extends Component {
         <NavBar />
         <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/new" component={AddEvent} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/event" component={ViewEvent}/>
+            <Route path="/" component={HomePage} />
+            <Route path="/new" component={AddEvent} />
+            <Route path="/login" component={Login} />
+            <Route path="/event" component={ViewEvent}/>
         </Switch>
         </BrowserRouter>
       </div>
