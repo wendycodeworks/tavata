@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/tavata/static/js/main.75e27355.chunk.js",
+    "main.js.map": "/tavata/static/js/main.75e27355.chunk.js.map",
+    "runtime-main.js": "/tavata/static/js/runtime-main.2feb6aa3.js",
+    "runtime-main.js.map": "/tavata/static/js/runtime-main.2feb6aa3.js.map",
+    "static/css/2.48509d29.chunk.css": "/tavata/static/css/2.48509d29.chunk.css",
+    "static/js/2.54de500e.chunk.js": "/tavata/static/js/2.54de500e.chunk.js",
+    "static/js/2.54de500e.chunk.js.map": "/tavata/static/js/2.54de500e.chunk.js.map",
+    "index.html": "/tavata/index.html",
+    "precache-manifest.039edb224481cb727b7d622ca47535f9.js": "/tavata/precache-manifest.039edb224481cb727b7d622ca47535f9.js",
+    "service-worker.js": "/tavata/service-worker.js",
+    "static/css/2.48509d29.chunk.css.map": "/tavata/static/css/2.48509d29.chunk.css.map",
+    "static/js/2.54de500e.chunk.js.LICENSE.txt": "/tavata/static/js/2.54de500e.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/tavata/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/logo.png": "/tavata/static/media/logo.dbeac699.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2feb6aa3.js",
+    "static/css/2.48509d29.chunk.css",
+    "static/js/2.54de500e.chunk.js",
+    "static/js/main.75e27355.chunk.js"
+  ]
+}
