@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import HomePage from "./pages/HomePage.js";
-import AddEvent from "./pages/Event/AddEvent.js"
-import NavBar from './pages/components/NavBar';
-import {BrowserRouter, Route} from "react-router-dom"
+import HomePage from "./pages/HomePage";
+import NavBar from "./pages/components/NavBar"
+import AddEvent from "./pages/Event/AddEvent";
+import ViewEvent from "./pages/Event/ViewEvent";
+import {BrowserRouter, Route, Link, Switch} from "react-router-dom"
 import Login from "./pages/User/Login.js"
 
 class App extends Component {
@@ -11,11 +12,12 @@ class App extends Component {
       <div>
         <NavBar />
         <BrowserRouter>
-        <div>
+        <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/new" component={AddEvent} />
             <Route exact path="/login" component={Login} />
-        </div>
+            <Route exact path="/event" component={ViewEvent}/>
+        </Switch>
         </BrowserRouter>
       </div>
     )

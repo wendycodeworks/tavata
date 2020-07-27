@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import AddEvent from './Event/AddEvent';
 import BrowseButton from './components/BrowseButton'
 import EventCard from './components/EventCard'
 import 'bulma';
@@ -9,13 +8,13 @@ class HomePage extends Component {
     return (
         <>
         <div> 
-            <section class="hero is-fullheight-with-navbar">
-                <div class="hero-body is-medium">
-                    <div class="container">
-                        <h1 class="title is-1">
+            <section className="hero is-fullheight-with-navbar">
+                <div className="hero-body is-medium">
+                    <div className="container">
+                        <h1 className="title is-1">
                             Events near you
                         </h1>
-                            <h2 class="subtitle">
+                            <h2 className="subtitle">
                                 Your local tech ecosystem at your figure tips
                             </h2>
                             <BrowseButton />
@@ -23,9 +22,9 @@ class HomePage extends Component {
                 </div>
             </section>
             <section>
-                <div class="hero-body">
-                    <div class="container">
-                        <h1 class="title">
+                <div className="hero-body">
+                    <div className="container">
+                        <h1 className="title">
                             Top picks
                         </h1>
                         <EventCard />
