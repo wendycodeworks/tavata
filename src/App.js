@@ -11,14 +11,7 @@ class App extends Component {
     return(
       <div>
         <NavBar />
-        <BrowserRouter>
-        <Switch>
-            <Route path="/" component={HomePage} />
-            <Route path="/new" component={AddEvent} />
-            <Route path="/login" component={Login} />
-            <Route path="/event" component={ViewEvent}/>
-        </Switch>
-        </BrowserRouter>
+        <HomePage />
       </div>
     )
   }

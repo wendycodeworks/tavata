@@ -6,7 +6,13 @@ import App from './App';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+        <Switch>
+            <Route path="/" component={HomePage} />
+            <Route path="/new" component={AddEvent} />
+            <Route path="/login" component={Login} />
+            <Route path="/event" component={ViewEvent}/>
+        </Switch>
+      <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
